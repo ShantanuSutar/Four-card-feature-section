@@ -1,0 +1,112 @@
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Very-Light-Gray);
+}
+
+.container {
+  padding: 30px;
+  margin: 40px 0;
+}
+
+.container .about h1 {
+  font-weight: 200;
+  font-size: 25px;
+  text-align: center;
+  color: var(--Very-Dark-Blue);
+}
+.container .about h2 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--Very-Dark-Blue);
+}
+.container .about p {
+  text-align: center;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.container .card {
+  padding: 10px;
+  margin: 10px;
+  box-shadow: rgba(149, 154, 214, 0.313) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border-radius: 5px;
+  color: var(--Grayish-Blue);
+  margin-bottom: 30px;
+}
+.container .card h3 {
+  color: var(--Very-Dark-Blue);
+  padding: 10px 15px 0;
+  font-weight: 600;
+}
+.container .card p {
+  padding: 10px 15px;
+  font-weight: 200;
+  font-size: 14px;
+}
+.container .card img {
+  position: relative;
+  margin: 25px 0 40px 0;
+  top: 25px;
+  left: 75%;
+  width: 3.5rem;
+}
+.container #card-1 {
+  border-top: 4px solid var(--Cyan);
+}
+.container #card-2 {
+  border-top: 4px solid var(--Red);
+}
+.container #card-3 {
+  border-top: 4px solid var(--Orange);
+}
+.container #card-4 {
+  border-top: 4px solid var(--Blue);
+}
+
+@media (min-width: 768px) {
+  .container .about {
+    margin-bottom: 50px;
+  }
+  .container .card {
+    max-width: 25%;
+    max-height: 250px;
+  }
+  .container .cards {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+  }
+  .container .cards section:nth-child(odd) {
+    transform: translateY(50%);
+  }
+}
