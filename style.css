@@ -94,6 +94,9 @@ body {
   .container .about {
     margin-bottom: 50px;
   }
+  .container .about p {
+    padding: 0 32%;
+  }
   .container .card {
     max-width: 25%;
     max-height: 250px;
